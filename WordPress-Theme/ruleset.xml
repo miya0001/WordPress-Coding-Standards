@@ -9,6 +9,9 @@
 	<!-- Covers: https://github.com/Otto42/theme-check/blob/master/checks/phpshort.php -->
 	<rule ref="Generic.PHP.DisallowShortOpenTag" />
 
+	<!-- Alternative PHP open tags not allowed. -->
+	<rule ref="WordPress.PHP.DisallowAlternativePHPTags"/>
+
 	<!-- Only UNIX line endings allowed. -->
 	<!-- Covers: https://github.com/Otto42/theme-check/blob/master/checks/lineendings.php -->
 	<rule ref="Generic.Files.LineEndings">
