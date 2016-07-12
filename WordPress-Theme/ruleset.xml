@@ -29,4 +29,8 @@
 	<!-- No hard coding of scripts and styles. Everything should be enqueued. -->
 	<rule ref="WordPress.WP.EnqueuedResources" />
 
+	
+	<rule ref="WordPress.PHP.DiscouragedFunctions"/>
+
+
 </ruleset>
