@@ -29,4 +29,10 @@
 	<!-- No hard coding of scripts and styles. Everything should be enqueued. -->
 	<rule ref="WordPress.WP.EnqueuedResources" />
 
+	<!-- Validate and/or sanitize untrusted data before entering into the database. -->
+	<rule ref="WordPress.VIP.ValidatedSanitizedInput" />
+
+	<!-- All untrusted data should be escaped before output. -->
+	<rule ref="WordPress.XSS.EscapeOutput" />
+
 </ruleset>
