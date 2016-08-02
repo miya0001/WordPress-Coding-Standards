@@ -83,7 +83,7 @@ class WordPress_Sniffs_Theme_NoTitleTagSniff implements PHP_CodeSniffer_Sniff {
 
 		// Now let's do the check for the <title> tag.
 		if ( false !== strpos( $content, '<title' ) ) {
-			$phpcsFile->addError( 'The title tag must not be used. Use add_theme_support( \'title-tag\' ) instead.', $stackPtr, 'NotAllowed' );
+			$phpcsFile->addError( "The title tag must not be used. Use add_theme_support( 'title-tag' ) instead.", $stackPtr, 'NotAllowed' );
 		}
 
 	} // end process()
